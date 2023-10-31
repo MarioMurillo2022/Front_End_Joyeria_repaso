@@ -1,0 +1,16 @@
+--- En el archivo public se puede poner todo lo que quiera hacer public, no requiere accesos de seguridad,
+--- En assets, pero requiere accesos
+--- Se pueden crear nuestros propios archivos css
+--- App y Main . jsx son componentes
+--- El index.html es lo que se muestra en el host o proyecto desplegado
+--- React trabaja con un DOM virtual
+--- En el main el modo estricto ayuda a identificar problemas, errores y renderiza el app.jsx
+--- Es el componente principal, siendo un componente funcional, el archivo app retorna en el fondo html y javaScript JSX que es la combinación 
+
+-- Efecto hover bueno
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+--- atajo = rafc hace un export del nmbre del archivo, un array function y retorna 
+--- fragments son etiquetas vacias de html: <> <h1>Hola mundo </h1> </>
