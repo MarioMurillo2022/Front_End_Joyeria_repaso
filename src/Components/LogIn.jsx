@@ -1,6 +1,21 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export const LogIn = () => {
+
+    const navegar = useNavigate();
+    const logIn = () => {
+
+
+        event.preventDefault();
+        console.log("He dado clik al boton de Sign In")
+
+    }
+
+    const signIn = () => {
+        event.preventDefault();
+        navegar('/signIn');
+    }
     return (
         <>
             <div className='container mt-5'>
@@ -19,8 +34,8 @@ export const LogIn = () => {
                         <label>PassWord</label>
                     </div>
 
-                    <button type='subtmit' className='btn btn-secondary w-100 mb-3'>Log In</button>
-                    <button className='btn btn-secondary w-100 '>Sign In</button>
+                    <button className='btn btn-secondary w-100 mb-3' onClick={logIn} >Log In</button>
+                    <button className='btn btn-secondary w-100 ' onClick={signIn} >Sign In</button>
 
                 </form>
             </div>
